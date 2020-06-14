@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' ws://localhost:8080/ws; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="calc.css">
+
+    <title>Anwar NSSG Task</title>
+  </head>
+  <body>
+
+    <form class="calculator" name="calc">
+      <input class="value" type="text" name="txt" id="calcvalue"/>
+      <span class="num clear" >C</span>
+      <span class="num op" disabled>/</span>
+      <span class="num op" disabled>*</span>
+      <span class="num" >7</span>
+      <span class="num" >8</span>
+      <span class="num" >9</span>
+      <span class="num op" disabled>-</span>
+      <span class="num" >4</span>
+      <span class="num" >5</span>
+      <span class="num" >6</span>
+      <span class="num plus op">+</span>
+      <span class="num"  >3</span>
+      <span class="num"  >2</span>
+      <span class="num" id="one"  >1</span>
+      <span class="num"  >0</span>
+      <span class="num"  >00</span>
+      <span class="num"  >.</span>
+      <span class="num equal" >=</span>
+    </form>
+    
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
